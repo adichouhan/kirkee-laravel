@@ -43,7 +43,7 @@
             <div class="account-details">
                 <div class="row account-detail-section">
                     <div class="col-10 account-section-spacing">
-                        <p>NAME :</p>
+                        <p>{{ $t("NAME") }} :</p>
                         <p>HEDI</p>
                     </div>
                     <div class="col-2 account-edit-icon">
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row account-detail-section">
                     <div class="col-10 account-section-spacing">
-                        <p>EMAIL :</p>
+                        <p>{{ $t("EMAIL") }} :</p>
                         <p>HEDI@EMAIL.COM</p>
                     </div>
                     <div class="col-2 account-edit-icon">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row account-detail-section">
                     <div class="col-10 account-section-spacing">
-                        <p>PHONE :</p>
+                        <p>{{ $t("PHONE") }} :</p>
                         <p>9876543219</p>
                     </div>
                     <div class="col-2 account-edit-icon">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="row account-password">
                     <div class="col-10 account-section-spacing">
-                        <p>PASSWORD :</p>
+                        <p>{{ $t("PASSWORD") }} :</p>
                         <p>***********</p>
                     </div>
                     <div class="col-2 account-edit-icon">

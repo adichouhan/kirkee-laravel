@@ -17,22 +17,22 @@
 </template>
 
 <script lang="js">
-export default {
-  name: 'dashboard',
-  data(){
-    const lang= localStorage.getItem('lang') || en
-    return{
+  export default {
+    name: 'dashboard',
+    data(){
+      const lang= localStorage.getItem('lang') || en
+      return{
         lang : lang
-    }
-  },
+      }
+    },
 
-  methods:{
-    handleChange(event){
+    methods:{
+      handleChange(event){
         localStorage.setItem('lang', event.target.value);
         window.location.reload();
+      }
     }
   }
-}
 </script>
 
 <style scoped lang="scss">

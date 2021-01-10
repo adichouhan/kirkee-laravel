@@ -3,7 +3,7 @@
     <div class="row dashboard dashboard-header">
       <div class="col-sm-4">
         <h1>{{ $t("Orders History") }}</h1>
-        <p>Get a summary of your order history</p>
+        <p>{{$t("Get a summary of your order history")}}</p>
       </div>
       <div class="col-sm-3 mt-2">
         <div class="custom-control custom-switch">
@@ -14,7 +14,7 @@
                   name="example"
           />
           <label class="custom-control-label" for="switch1"
-          >View in templates</label
+          >{{$t("View in templates")}}</label
           >
         </div>
       </div>
@@ -44,7 +44,6 @@
         </div>
       </div>
     </div>
-    </div>
     <div class="order-history-view">
       <div class="row">
         <div class="col-sm-4">
@@ -56,9 +55,9 @@
               <i class="mdi mdi-magnify"></i>
               <select>
                 <option selected="">Search by order No.</option>
-                <option value="volvo">Volvo</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option></select
+                <option value="name">Search by Name</option>
+                <option value="date">Search by Date</option>
+              </select
               >
             </div>
             <input type="text" class="form-control" id="usr" name="username" />
@@ -69,7 +68,7 @@
             <div class="col-sm-4">
               <button type="button" class="btn select-all-btn">
                 <router-link class="nav-link select-all-link" to="/login/"
-                >Select all</router-link
+                >{{$t("Select all")}}</router-link
                 >
               </button>
             </div>
@@ -79,7 +78,7 @@
               <i class="mdi mdi-chevron-down"></i>
             </div>
             <div class="col-sm-4">
-              <h4 class="download-all">Download All</h4>
+              <h4 class="download-all">{{$t("Download All")}}</h4>
             </div>
           </div>
         </div>
@@ -114,7 +113,7 @@
               Chairs
               <input
                       type="checkbox"
-                      id="defaultCheck"
+                      id="defaultCheck1"
                       name="example2"
                       class="orderhistory-checkbox"
               />
@@ -136,7 +135,7 @@
               Chairs
               <input
                       type="checkbox"
-                      id="defaultCheck"
+                      id="defaultCheck2"
                       name="example2"
                       class="orderhistory-checkbox"
               />
@@ -169,7 +168,7 @@
           </tr>
           <tr>
             <td>
-              <button type="button" class="btn btn-danger">cancelled</button>
+              <button type="button" class="btn btn-danger">{{$t("cancelled")}}</button>
             </td>
             <td>13 Dec 2020</td>
             <td>$75.67</td>
@@ -182,7 +181,7 @@
               Chairs
               <input
                       type="checkbox"
-                      id="defaultCheck"
+                      id="defaultCheck4"
                       name="example2"
                       class="orderhistory-checkbox"
               />
@@ -206,7 +205,7 @@
               Chairs
               <input
                       type="checkbox"
-                      id="defaultCheck"
+                      id="defaultCheck3"
                       name="example2"
                       class="orderhistory-checkbox"
               />

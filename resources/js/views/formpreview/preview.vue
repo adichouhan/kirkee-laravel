@@ -11,13 +11,13 @@
                             >
                                 <button type="button" class="btn login-btn">
                                     <router-link class="nav-link login-link" to="/login/"
-                                    >Login</router-link
+                                    >{{ $t("Login") }}</router-link
                                     >
                                 </button>
 
                                 <button type="button" class="btn register-btn">
                                     <router-link class="nav-link register-link" to="/register/"
-                                    >Register</router-link
+                                    >{{ $t("Register") }}</router-link
                                     >
                                 </button>
                             </div>
@@ -25,10 +25,10 @@
                                     class="col-sm-6 navbar-menu-wrapper d-flex align-items-center ml-auto ml-lg-0"
                             >
                                 <b-navbar-nav class="header-links d-none d-md-flex">
-                                    <b-nav-item href="#">Home</b-nav-item>
-                                    <b-nav-item href="#">Product</b-nav-item>
-                                    <b-nav-item href="#">About</b-nav-item>
-                                    <b-nav-item href="#">Contact</b-nav-item>
+                                    <b-nav-item href="#">{{ $t("Home") }}</b-nav-item>
+                                    <b-nav-item href="#">{{ $t("Product") }}</b-nav-item>
+                                    <b-nav-item href="#">{{ $t("About") }}</b-nav-item>
+                                    <b-nav-item href="#">{{ $t("Contact") }}</b-nav-item>
                                 </b-navbar-nav>
                             </div>
                             <div

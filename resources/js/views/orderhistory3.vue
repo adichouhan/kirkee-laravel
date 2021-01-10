@@ -2,8 +2,8 @@
   <section class="dashboard">
     <div class="row dashboard dashboard-header">
       <div class="col-sm-4">
-        <h1>Order History</h1>
-        <p>Get a summary of your order history</p>
+        <h1>{{ $t("Orders History") }}</h1>
+        <p>{{ $t("Get a summary of your order history") }}</p>
       </div>
       <div class="col-sm-3 mt-2">
         <div class="custom-control custom-switch">
@@ -14,7 +14,7 @@
                   name="example"
           />
           <label class="custom-control-label" for="switch1"
-          >View in templates</label
+          >{{$t("View in templates")}}</label
           >
         </div>
       </div>
@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-sm-3 icon-help">
             <i class="mdi mdi-help-circle"></i>
-            <p class="help-text ml-2">Help</p>
+            <p class="help-text ml-2">{{ $t("Help") }}</p>
           </div>
           <div class="col-sm-3 help-option-icon d-inline-flex">
             <i class="icon-email mdi mdi-email"></i>
@@ -38,12 +38,11 @@
             </div>
             <div class="profile-name ml-2 mt-1">
               <h6 class="mb-0">Hedi</h6>
-              <p class="">Account Details</p>
+              <p class="">{{ $t("Account Details") }}</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div class="row orderhistory-download-view">
       <div class="col-sm-1"></div>
@@ -63,12 +62,12 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="Download-card-view">
-              <button type="button" class="btn btn-success">done</button>
+              <button type="button" class="btn btn-success">{{ $t("Done") }}</button>
               <div class="download-image">
                 <img
                         src="../assets/images/dashboard/download.png"
@@ -78,7 +77,7 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
           <div class="col-sm-4">
@@ -95,14 +94,14 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="Download-card-view">
-              <button type="button" class="btn btn-success">done</button>
+              <button type="button" class="btn btn-success">{{ $t("Done") }}</button>
               <div class="download-image">
                 <img
                         src="../assets/images/dashboard/download.png"
@@ -112,12 +111,12 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="Download-card-view">
-              <button type="button" class="btn btn-danger">cancelled</button>
+              <button type="button" class="btn btn-danger">{{$t("cancelled")}}</button>
               <div class="download-image">
                 <img
                         src="../assets/images/dashboard/download.png"
@@ -127,12 +126,12 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="Download-card-view">
-              <button type="button" class="btn btn-danger">cancelled</button>
+              <button type="button" class="btn btn-danger">{{$t("cancelled")}}</button>
               <div class="download-image">
                 <img
                         src="../assets/images/dashboard/download.png"
@@ -142,7 +141,7 @@
             </div>
             <div class="download-btn">
               <i class="mdi mdi-download"></i
-              ><span class="download-text">Download</span>
+              ><span class="download-text">{{$t("Download")}}</span>
             </div>
           </div>
         </div>
