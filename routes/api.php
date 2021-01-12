@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => '\App\Http\Controllers'], function() {
     Route::post('login', 'Auth\ApiAuthController@login');
     Route::post('register', 'Auth\ApiAuthController@register');
+    Route::post('user/update/{id}', 'Auth\UserController@update');
 
 
     Route::group(['prefix' => 'users'], function() {

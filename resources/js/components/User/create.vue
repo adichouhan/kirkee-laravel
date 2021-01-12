@@ -30,7 +30,14 @@
             <div class="edit-photo">
                 <img
                         class="edit-profile-image"
-                        :src="this.form.image? '/'+this.form.image : '../../assets/images/account/account.png'"
+                        v-if="this.form.image"
+                        :src="this.form.image"
+                        alt="default"
+                />
+                <img
+                        class="edit-profile-image"
+                        v-else
+                        src="../../assets/images/account/account.png"
                         alt="default"
                 />
                 <p class="mt-3"><a href="#"><b-form-file id="inpu8" type="file" v-model="form.image" @change="selectFile" name="image"
@@ -204,15 +211,17 @@
                 const config = {
                     headers: { 'content-type': 'multipart/form-data' }
                 }
-                let url='/api/register';
+                let url ='/api/register';
                 if(this.userId){
-                    url = 'api/update/'+this.userId;
+                    url = '/api/user/update/'+this.userId;
                 }
                 axios.post(url, this.form)
                     .then(response => {
                         console.log(response)
+                        $('#myModal').modal('toggle');
                     }).catch(error => {
                     console.log(error)
+                    $('#myModal').modal('toggle');
                 })
             },
 

@@ -26,6 +26,9 @@ export default {
         console.log(paylaod);
         state.errors = paylaod.errors
     },
+    showErrors(state, paylaod){
+        console.log(paylaod);
+    },
 
     setLoginStatus(state, payload) {
         localStorage.setItem('is_logged_in', payload.boolLoggedIn)

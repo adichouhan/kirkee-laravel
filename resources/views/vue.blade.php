@@ -15,7 +15,7 @@
     <home></home>
 </div>
 </body>
-<script src="{{ url('./js/app.js') }}">
+<script src="{{ url('/js/app.js') }}">
 
 </script>
 </html>

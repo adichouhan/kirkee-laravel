@@ -205,7 +205,7 @@
               </div>
               <div class="card social-login-card go-to-register mt-5">
                 <div class="card-body social-card-body auth-social-section">
-                  {{ $t("no account") }}
+                  <router-link class="nav-link" to="/register">{{ $t("no account") }}</router-link>
                 </div>
               </div>
             </div>
